@@ -1,8 +1,9 @@
 POST http://localhost:3333/courses
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiMWFkN2EzYy1mYjc1LTQyZmYtOTcxYy02OGMyOTM2ZTgyMjQiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1NTQ2MjU3Mn0.lvKF1BwWSJDY4L-Sj812GcyVQFyI-20ImIyU1bWd-hE
 
 {
-  "title": "Curso de Nodejs"
+  "title": "Curso de Angular"
 }
 
 ###
@@ -11,4 +12,15 @@ GET http://localhost:3333/courses
 
 ###
 
-GET http://localhost:3333/courses/ed08672b-d8cd-473c-b6fd-3b8c9ccb457d
+GET http://localhost:3333/courses/d8b9b19a-7a65-4509-93bd-ac0f0098ac03
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiMWFkN2EzYy1mYjc1LTQyZmYtOTcxYy02OGMyOTM2ZTgyMjQiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc1NTQ1MjU5NH0.gK1a061m7pqaBQUc_Ww4Ow1Rn2Qm4VcZhlDNilkjhJU
+
+###
+
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+  "email": "Liz44@hotmail.com",
+  "password": "123456"
+}

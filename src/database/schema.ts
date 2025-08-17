@@ -1,10 +1,17 @@
 import { uniqueIndex } from 'drizzle-orm/pg-core'
-import { pgTable, uuid, text ,timestamp} from 'drizzle-orm/pg-core'
+import { pgTable, uuid, text, timestamp, pgEnum } from 'drizzle-orm/pg-core'
+
+export const userRoles = pgEnum('user_role', [
+  'student',
+  'manager'
+])
 
 export const users = pgTable('users', {
   id: uuid().primaryKey().defaultRandom(),
   name: text().notNull(),
   email: text().notNull().unique(),
+  password: text().notNull(),
+  role: userRoles().notNull().default("student")
 })
 
 export const courses = pgTable('courses', {
@@ -17,7 +24,7 @@ export const enrollments = pgTable('enrollments', {
   id: uuid().primaryKey().defaultRandom(),
   userId: uuid().notNull().references(() => users.id),
   courseId: uuid().notNull().references(() => courses.id),
-  createAt: timestamp({ withTimezone: true}).notNull().defaultNow(),
+  createAt: timestamp({ withTimezone: true }).notNull().defaultNow(),
 }, table => [
   uniqueIndex().on(table.userId, table.courseId)
 ])
