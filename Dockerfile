@@ -7,4 +7,4 @@ COPY . ./
 RUN npm ci 
 EXPOSE 3333
 
-CMD [ "node", "src/server.ts" ]
+CMD ["node", "src/server.ts"]
