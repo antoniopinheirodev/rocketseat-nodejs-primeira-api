@@ -9,9 +9,9 @@ test('Get courses by id', async () => {
 
   const course = await makeCourse()
   const response = await request(server.server)
-    .get(`/courses/${course}`)
+    .get(`/courses/${course.id}`)
 
-  expect(response.status).toEqual(201)
+  expect(response.status).toEqual(200)
   expect(response.body).toEqual({
     course: {
       id: expect.any(String),
