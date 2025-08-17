@@ -15,6 +15,34 @@
       "when": 1755039781603,
       "tag": "0001_absurd_nighthawk",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1755368290794,
+      "tag": "0002_peaceful_raider",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1755368407839,
+      "tag": "0003_dapper_robbie_robertson",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1755370144044,
+      "tag": "0004_loud_turbo",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1755370734986,
+      "tag": "0005_neat_leopardon",
+      "breakpoints": true
     }
   ]
 }

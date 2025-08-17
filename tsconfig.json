@@ -7,9 +7,9 @@
     "lib": ["es2024", "ESNext.Array", "ESNext.Collection", "ESNext.Iterator"],
     "module": "nodenext",
     "target": "es2022",
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
-
+    "allowImportingTsExtensions": true, // permitir import de arquivos .ts
+    "noEmit": true,  // vou omitir a compilação de ts para js ,por que node ja suporta a conversao de ts para javascript , usar typescript apeenas para checkagem de tipos 
+    // no vscode usar o ctr + p > Restart TS Server para pegar as novas configuracoes do typescript 
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

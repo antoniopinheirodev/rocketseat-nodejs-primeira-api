@@ -1,0 +1,6 @@
+## ORM 
+npm i drizzle-kit -D -> como dependencia de desenvolvimento
+npm i drizzle-orm    -> pacote do pg
+npm i pg             -> drive do Postgree  ele tem instrumenteção automatica para integracao de observablidade 
+
+
